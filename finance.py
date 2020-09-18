@@ -7,7 +7,7 @@ Program finishes after saving portfolio to Excel file and
 plotting share price and portfolio profit charts"""
 
 # /-----------------------------------------------------------------------------/
-# Read an open-high-low-close share price data
+# Read an open-high-low-close share price data from CSV file
 data = pd.read_csv("finance.csv", index_col=0, parse_dates=True)
 
 # Declare portfolio DataFrame
