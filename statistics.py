@@ -104,7 +104,7 @@ def analyze_and_visualize(dataframe):
     dataframe.loc["deviation"] = deviation
     print(dataframe)
 
-    # Export DataFrame to csv and Excel files
+    # Export DataFrame to CSV and Excel files
     with open("statistics.csv", 'w+') as file:
         dataframe.to_csv(file, line_terminator='\n')
     with pandas.ExcelWriter("statistics.xlsx") as writer:
