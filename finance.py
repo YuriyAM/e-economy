@@ -50,7 +50,7 @@ print(f"Mean daily profit: \t{pf['profit'].mean():.2f}$")
 print(f"Daily profit variance: \t{pf['profit'].var():.2f}")
 # Find weekday with maximum profit
 wd_profit = pf.groupby(pf.index.day_name())["profit"].sum()
-print(f"Maximum profit is {wd_profit.max():.2f}$ at {wd_profit.idxmax()}")
+print(f"Maximum profit is {wd_profit.max():.2f}$ on {wd_profit.idxmax()}")
 
 # /-----------------------------------------------------------------------------/
 # Calculate maximum loss in two ways:
